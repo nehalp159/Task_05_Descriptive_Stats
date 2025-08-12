@@ -39,11 +39,15 @@ Task_05_Descriptive_Stats/
 ├── prompts/
 │   └── questions.md                           # Test questions
 └── results/
-    ├── gemini_results.md                      # Results from Claude
     ├── chatgpt_results.md                     # Results from ChatGPT
+    ├── claude_results.md                      # Results from Claude
+    ├── copilot_results.md                     # Results from Copilot
+    ├── gemini_results.md                      # Results from Gemini
     ├── python_output.md                       # Results from Python validation script
-    ├── summary_Python vs Gemini               # Overall findings
-    └── summary_Python vs ChatGPT.md           # Overall findings
+    ├── summary_Python vs ChatGPT.md           # Overall findings
+    ├── summary_Python vs Claude.md            # Overall findings
+    ├── summary_Python vs Copilot.md           # Overall findings
+    └── summary_Python vs Gemini.md            # Overall findings
 ```
 
 ## Key Findings
@@ -55,6 +59,14 @@ Task_05_Descriptive_Stats/
 - Gemini included reasoning utilizing measures like shooting efficiency as well as MVP scores, and it matched all Python statistics.
 - More innovative assessment techniques were introduced by Gemini's analysis, which were helpful for coaching insights.
 
+### Python vs Claude
+- Claude provided thorough tactical thinking and matched all Python statistics reports.
+- Suggested lineup optimization, player development, and focused defensive enhancements.
+
+### Python vs Copilot
+- Copilot included non-player rows like "Team" and "Totals Opponents," which led to an incorrect count of players and points, although it matched the majority of Python's player-specific statistics.
+- Despite occasional errors in dataset interpretation, it provided rational coaching recommendations, optimal lineups, and opportunities for improvement.
+
 ## How to Reproduce
 1. Make a clone of this repository
 2. Include your dataset in the folder `data/`
@@ -65,10 +77,13 @@ Task_05_Descriptive_Stats/
 ## Tools Used
 - VS Code for development
 - Python 3.x for validation
-- ChatGPT, Gemini
+- Gemini, ChatGPT, Claude, Copilot
+
+## Overall Conclusion
+Python provided precise statistical computations, guaranteeing accuracy in numerical findings. ChatGPT typically produced similar results and provided clear, strategic coaching advice. Gemini incorporated novel measurements and evaluation methods while matching the calculations as well. Claude was as precise as Python and had the most practical, strategic reasoning. Although Copilot frequently misread the dataset design by inserting non-player rows, it was still able to match a large number of Python results while offering helpful coaching advice and recommendations for improvement. When combined, these tools demonstrate how combining the qualitative knowledge of LLMs with the quantitative precision of Python results in more comprehensive and practical sports data analysis.
 
 ## Contact
 For inquiries about this analysis, please contact: nepawar@syr.edu
 
 ## Acknowledgments
-Under Professor Jonathan's guidance, the project in progress as part of Syracuse University's research requirements.
+Under Professor Jonathan's guidance, the project is part of Syracuse University's research requirements.
